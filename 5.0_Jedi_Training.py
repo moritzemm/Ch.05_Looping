@@ -10,13 +10,15 @@ for i in range(3):
     x = input("Enter a number: ")
     total = total + i
     print("The total is:", x)
-  '''
+'''
 
 
- '''
+'''
   2. Write a Python program that will use a FOR loop to print the even
      numbers from 2 to 100, inclusive.
 '''
+for(i) range(2,101,2)
+ print(i)
 
 
 
@@ -27,7 +29,7 @@ for i in range(3):
      10 down to, and including, 0. Then print the words Blast off! Remember, use
      a WHILE loop, don't use a FOR loop.
 '''
-
+while input
 
 
 
@@ -52,3 +54,6 @@ for i in range(3):
      if statements.
       
 '''
+A,B,C,D,E,F,G = input(print("Please enter 7 numbers"))
+Z = A+B+C+D+E+F+G
+print("The sum of your numbers is", Z)
