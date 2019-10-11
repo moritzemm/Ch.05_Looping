@@ -10,38 +10,40 @@ for i in range(3):
     x = input("Enter a number: ")
     total = total + i
     print("The total is:", x)
-'''
 
 
-'''
+
+
   2. Write a Python program that will use a FOR loop to print the even
      numbers from 2 to 100, inclusive.
-'''
-for(i) range(2,101,2)
+
+for(i) in range(2,101,2):
  print(i)
 
 
 
 
 
-'''
+
   3. Write a program that will use a WHILE loop to count from
      10 down to, and including, 0. Then print the words Blast off! Remember, use
      a WHILE loop, don't use a FOR loop.
-'''
-while input
+
+a=11
+while a>0:
+    a-=1
+    print (a)
+print ("Blast Off!")
 
 
 
-
-
-'''
   4. Write a program that prints a random integer from 1 to 10 (inclusive).
+
+import random
+num=random.randrange(1,11)
+print(num)
+
 '''
-
-
-
-
 
 
 '''
@@ -54,6 +56,3 @@ while input
      if statements.
       
 '''
-A,B,C,D,E,F,G = input(print("Please enter 7 numbers"))
-Z = A+B+C+D+E+F+G
-print("The sum of your numbers is", Z)
