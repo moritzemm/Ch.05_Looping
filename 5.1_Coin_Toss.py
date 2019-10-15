@@ -7,17 +7,21 @@ COIN TOSS PROGRAM
 4.) Create a running total for the number of heads and the number of tails and print the total at the end.
 '''
 game=0
+heads=0
+tails=0
 import random
 while game<50:
     num = random.randrange(0, 2)
     if num==0:
         print("Heads")
         game+=1
+        heads+=1
     else:
         print("Tails")
         game+=1
-
-
+        tails+=1
+print("There where ",heads," heads")
+print("There where ",tails, " tails")
 
 
 

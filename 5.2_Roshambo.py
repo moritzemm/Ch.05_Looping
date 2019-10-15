@@ -11,17 +11,17 @@ When the user quits print a win/loss record
 
 '''
 answer=input("Type Y if you want to play")
-if answer.lower()="y":
-
-print("What move do you chose?")
-import random
-num=random.randrange(1,4)
-if num==1:
-    print("rock")
-elif num==2:
-    print("paper")
-else:
-    print("sissors")
+if answer.lower()=="y":
+    play=input("What move do you chose?","press 1 for rock","press 2 for paper","press 3 for scissors")
+    if play=="1":
+        import random
+        num=random.randrange(1,4)
+        if num==1:
+            print("rock")
+        elif num==2:
+            print("paper")
+        else:
+            print("scissors")
 
 
 

@@ -56,3 +56,20 @@ print(num)
      if statements.
       
 '''
+total=0
+pos=0
+neg=0
+zero=0
+for i in range (7):
+    i=int(input("please enter a number"))
+    total+=i
+    if i>0:
+        pos+=1
+    elif i==0:
+        zero+=1
+    else:
+        neg+=1
+print("The total of your numbers is ", total)
+print("There where ",pos,"posative numbers")
+print("There where ",neg," negative numbers")
+print("You gave me ", zero, "Zero's")
