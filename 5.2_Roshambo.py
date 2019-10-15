@@ -10,25 +10,43 @@ Add conditional statements to figure out who wins and keep the records
 When the user quits print a win/loss record
 
 '''
+done=False
+player=0
+total=0
 answer=input("Type Y if you want to play")
-if answer.lower()=="y":
-    play=input("What move do you chose?","press 1 for rock","press 2 for paper","press 3 for scissors")
+while answer.lower()=="y" and done==False :
+    play=int(input("What move do you chose?\npress 1 for rock\npress 2 for paper\npress 3 for scissors\npress 4 to Quit"))
+    import random
+    num = random.randrange(1, 4)
+    total+=1
     if play=="1":
-        import random
-        num=random.randrange(1,4)
         if num==1:
-            print("rock")
+            print("Rock, we tied!")
         elif num==2:
-            print("paper")
-        else:
-            print("scissors")
+            print("Paper, I win!")
+        elif num==3:
+            print("Scissors, You win!")
+            player+=1
+    elif play==2:
+        if num == 1:
+            print("Rock, You win!")
+            player+=1
+        elif num == 2:
+            print("Paper, We tied!")
+        elif num==3:
+            print("Scissors, I win!")
+    elif play==3:
+        if num == 1:
+            print("Rock, I win!")
+        elif num == 2:
+            print("Paper, You won!")
+            player+=1
+        elif num==3:
+            print("Scissors, We tied!")
 
-
-
-
-
-
-
+    else:
+        print("You won", player, "times out of", total)
+        done==True
 
 
 
