@@ -21,17 +21,19 @@ while not done:
         if N < M:
             if CT<9:
                 RN = random.randint(1, 21)
-
                 In = int(input("Choose:\n1.Drink\n2.normal speed\n3.Zoom\n4.Sleep\n5.Update\n6.Quit\n "))
                 if RN==7:
                     print("You found an oasis! You drank tons and so did your camel. You also refilled your canteen")
                     T=0
-                    CT=0
                     C=6
-                if T >= 4:
+                if T >= 4 and T <6 :
                     print("You are thirsty")
                 if M == 200 and done == False:
                     print("Congratulations! You Won!")
+                if N > M - 15:
+                    print("The natives are getting close")
+                if CT > 4 and CT < 9:
+                    print("Your camel is getting tired")
                 if In==6:
                     done=True
                 elif In==1:
@@ -63,15 +65,14 @@ while not done:
                     N += random.randrange(7, 15)
                 else:
                     print("Sorry, Not an option")
-            elif CT > 5 and CT <=9:
-                    print("Your camel is getting tired")
             else:
                  print("Your camel is dead")
-        elif N > M-15:
-            print("The natives are getting close")
+                 done = True
+                 print("Good try! Play again?")
         else:
             print("The natives have caught you, They stole your camel and killed you")
             done = True
+            print("Good try! Play again?")
     else:
         print("You died of thirst")
         done = True

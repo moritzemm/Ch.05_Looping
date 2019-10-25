@@ -19,7 +19,7 @@ while answer.lower()=="y" and done==False :
     import random
     num = random.randrange(1, 4)
     total+=1
-    if play=="1":
+    if play==1:
         if num==1:
             print("Rock, we tied!")
         elif num==2:
