@@ -46,7 +46,7 @@ while answer.lower()=="y" and done==False :
 
     else:
         print("You won", player, "times out of", total)
-        done==True
+        done=True
 
 
 

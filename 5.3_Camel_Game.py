@@ -49,7 +49,7 @@ while not done:
                     print("The people are", N , "Miles behind you")
                     print("Your thirst is",T)
                 elif In==4:
-                    CT==0
+                    CT=0
                     print("Your camel is happy")
                     N += random.randrange(7,15)
                 elif In==3:
@@ -66,9 +66,9 @@ while not done:
                 else:
                     print("Sorry, Not an option")
             else:
-                 print("Your camel is dead")
-                 done = True
-                 print("Good try! Play again?")
+                print("Your camel is dead")
+                done = True
+                print("Good try! Play again?")
         else:
             print("The natives have caught you, They stole your camel and killed you")
             done = True
